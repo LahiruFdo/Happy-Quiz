@@ -198,6 +198,7 @@
 				}
 				else{
 					document.getElementById("uname-alert").innerHTML = "";
+					document.getElementById("uname-alert").value = "";
 				}
 				
 			};
