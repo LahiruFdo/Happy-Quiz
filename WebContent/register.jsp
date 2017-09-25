@@ -119,7 +119,7 @@
 	<script>
 		function validateForm() {
 			var value = true;
-			var letterNumber = /^[a-zA-Z]+$/;  
+			var letterNumber = /^[a-z A-Z]+$/;  
 			
 		    var email = document.forms["register"]["email"].value;
 		    var atpos = email.indexOf("@");
