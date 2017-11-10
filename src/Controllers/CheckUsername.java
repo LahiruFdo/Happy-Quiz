@@ -21,7 +21,7 @@ public class CheckUsername extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String username = request.getParameter("val");
+		String username = request.getParameter("val").toLowerCase();
 		PrintWriter out = response.getWriter();
 		
 		DBConnection dbCon = new DBConnection();

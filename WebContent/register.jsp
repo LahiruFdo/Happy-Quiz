@@ -25,26 +25,26 @@
 		<!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <a class="navbar-brand" href="register.jsp">Happy Quiz</a>
+                <a class="navbar-brand" href="index.jsp">Happy Quiz</a>
             </div>
         </nav>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Welcome to Happy Quiz</h1>
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h3 class="page-header">Welcome to Happy Quiz</h3>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-sm-6 col-sm-offset-3">
                     <div class="panel panel-default">
                         <div class="alert alert-success">
                             Register as a new user
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body" style="padding-left:10%; padding-right:10%;">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="center">
                                     <form role="form" name="register" action="Register" onsubmit="return validateForm();" method="post">
                                         <div class="form-group">
                                             <label>Name</label>
@@ -78,31 +78,6 @@
                                         </center>
                                     </form>
                                 </div>
-                                <!-- /.col-lg-6 (nested) -->
-                                <div class="col-lg-6">
-                                    <div class="panel-body" style="width:140%;">
-                            			<ul class="timeline">
-                            				<li class="timeline-inverted-reg">
-			                                    <div class="timeline-badge-reg warning"></div>
-			                                    <div class="timeline-panel">
-			                                        <div class="timeline-heading">
-			                                            <h4 class="timeline-title">Who are we ???</h4>
-			                                        </div>
-			                                        <div class="timeline-body">
-			                                        	<ul>
-			                                        		<li>You can create your own quiz here and add a key to enroll</li><br>
-			                                        		<li>Anyone who has a valid quizname and key can enroll to a quiz</li><br>
-			                                        		<li>You can have competitions with your own quiz</li><br>
-			                                        		<li>You can set time for automatically activate your own quiz</li><br>
-			                                        		<li>You can have a group of allowed participants for a quiz</li>
-			                                        	</ul>
-			                                        </div>
-			                                    </div>
-			                                </li>
-                            			</ul>
-                            		</div>
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
                             </div>
                             <!-- /.row (nested) -->
                         </div>

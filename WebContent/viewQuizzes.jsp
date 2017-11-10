@@ -18,9 +18,6 @@
     <link type="text/css" href="${pageContext.request.contextPath}/CSS/morris.min.css" rel="stylesheet"/>
     <link type="text/css" href="${pageContext.request.contextPath}/CSS/sb-admin-2.css" rel="stylesheet"/>
     <link type="text/css" href="${pageContext.request.contextPath}/CSS/custom.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	
 	
@@ -30,45 +27,53 @@
 
         <!-- Navigation -->
         <jsp:include page="header-nav.jsp">
-		    <jsp:param name="active_page" value="home" />
+		    <jsp:param name="active_page" value="quizzes" />
 		</jsp:include>
         <br>
-        
         <div class="container" style="background-color: white;">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</h3>
+                    <h3 class="page-header"><i class="fa fa-question-circle fa-fw" aria-hidden="true" ></i>&nbsp;&nbsp;Quizzes</h3>
                 </div>
             </div>
             <div class="row">
             	<div class="col-lg-12">
-	                <div class="col-sm-8">
-	                	<div class="panel panel-default">
-			            	<div class="panel-heading">
-			                	<i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Quiz Summary
-			           		</div>
-			                <div class="panel-body">
-			                	<div class="list-group">
+	                <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; All Quizzes
+			           	</div>
+			            <div class="panel-body">
+			                <div class="list-group">
 			                                <!-- <a href="#" class="list-group-item">
 			                                    <i class="fa fa-comment fa-fw"></i> New Comment
 			                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
 			                                    </span>
 			                                </a> -->
-			                		<h5><i>No any quiz yet...</i></h5>
-			                	</div>
-			        		</div>
-			     		</div>
-	               	</div>
-	               	<div class="col-sm-4">
-	               		<center>
-	                	<a type="button" href="addQuiz.jsp" class="btn btn-lg btn-success" style="background-color:#16a085;">Add New Quiz</a>
-	                	</center>
-	                </div>
+			                	<h5><i>No any quiz yet...</i></h5>
+			                </div>
+			        	</div>
+	              	</div>
 	        	</div>
         	</div>
         </div>
-        
     </div>
+	
+	<!-- jQuery -->
+    <script src="${pageContext.request.contextPath}/JS/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="${pageContext.request.contextPath}/JS/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="${pageContext.request.contextPath}/JS/vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="${pageContext.request.contextPath}/JS/vendor/raphael/raphael.min.js"></script>
+    <script src="${pageContext.request.contextPath}/JS/vendor/morrisjs/morris.min.js"></script>
+    <script src="${pageContext.request.contextPath}/JS/data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="${pageContext.request.contextPath}/JS/dist/js/sb-admin-2.js"></script>
 
 </body>
 
